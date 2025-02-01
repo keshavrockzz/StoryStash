@@ -12,6 +12,6 @@ def create_app():
     app.db = client[app.config['DATABASE_NAME']]
 
     # Register routes
-    app.register_blueprint(api_blueprint, url_prefix='/api')
+    app.register_blueprint(api_blueprint)
 
     return app
